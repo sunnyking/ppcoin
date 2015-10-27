@@ -17,7 +17,7 @@ unsigned int nProtocolV04SwitchTime     = 1399300000;
 unsigned int nProtocolV04TestSwitchTime = 1395700000;
 // Protocol switch time of v0.5 kernel protocol
 unsigned int nProtocolV05SwitchTime     = 1454000000;
-unsigned int nProtocolV05TestSwitchTime = 1443200000;
+unsigned int nProtocolV05TestSwitchTime = 1446100000;
 
 // TxDB upgrade time for v0.4 protocol
 // Note: v0.4 upgrade does not require block chain re-download. However,
