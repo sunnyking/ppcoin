@@ -2372,6 +2372,8 @@ bool LoadBlockIndex(bool fAllowNew)
         // ppcoin: upgrade time set to zero if txdb initialized
         {
             CTxDB txdb;
+            if (!txdb.WriteV04UpgradeTime(0))
+                return error("LoadBlockIndex() : failed to init upgrade info");
             if (!txdb.WriteV05UpgradeTime(0))
                 return error("LoadBlockIndex() : failed to init upgrade info");
             printf(" Upgrade Info: v0.5+ txdb initialization\n");
